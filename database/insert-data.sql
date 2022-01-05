@@ -1,3 +1,5 @@
+use alumniclub;
+
 INSERT INTO `users` 
 (`id`, `username`, `password`, `firstName`, `lastName`, `email`, `role`,
 `speciality`, `graduationYear`, `groupUni`, `faculty`, `longitude`, `latitude`) 

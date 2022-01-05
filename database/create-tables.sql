@@ -1,8 +1,8 @@
-DROP DATABASE if EXISTS alumniClub;
+DROP DATABASE if EXISTS alumniclub;
 
-CREATE DATABASE alumniClub;
+CREATE DATABASE alumniclub;
 
-USE alumniClub;
+USE alumniclub;
 
 CREATE TABLE users (
   id              INT NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'primary key',

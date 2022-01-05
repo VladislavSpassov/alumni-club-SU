@@ -1,8 +1,14 @@
+:root{
+    --color-bg: #EF735A;
+    --color-shadow: #211842;
+    --color-blue: #384969;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(220,247,220);
-    font-family: cursive;
+    background-color: var(--color-shadow);
+    font-family: Roboto;
 }
 
 h1{
@@ -12,12 +18,12 @@ h1{
 }
 
 .header{
-    background-color: white;
+    background-color: var(--color-blue);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     place-content: space-between;
-    color: rgb(60,179,113);
+    color: var(--color-bg);
 }
 
 nav{
@@ -25,8 +31,8 @@ nav{
  }
  
  #home, #logout, #profile, #statistics {
-     border: 2px solid rgb(60,179,113);
-     color: rgb(60,179,113);
+     border: 2px solid var(--color-bg);
+     color: var(--color-bg);
      background: white;
      border-radius: 25px;
      font-size: 16px;
@@ -35,12 +41,13 @@ nav{
      margin-top: 6px;
      margin-left: 5px;
      cursor: pointer;
-     font-family: cursive;
+     font-family: Roboto;
+     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
  }
  
  #home:hover, #logout:hover, #profile:hover, #statistics:hover {
      color: white;
-     background: rgb(60,179,113);
+     background: var(--color-bg);
  }
 
  .list-of-users{
@@ -52,11 +59,11 @@ nav{
 .list-of-users article p{
     display: inline-block;
     margin-right: 10px;
-    color: rgb(60,179,113);
+    color: var(--color-bg);
 }
 
 .main-article{
-    border-bottom: 1px solid rgb(60,179,113);
+    border-bottom: 1px solid var(--color-bg);
     width: 35%;
 }
 
