@@ -77,6 +77,58 @@ body{
     font-size: 20px;
 }
 
+.forgottenpassword-button {
+    background: none;
+	color: blue;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 100%;
+    font-family: 'Verdana';
+}
+
+
+.noAccount-button {
+    background: none;
+	color: blue;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 100%;
+    padding: 3% 0%;
+    font-family: 'Verdana';
+}
+
+
+
+.registration-button{
+    width: 70%;
+    height: 35px;
+    border: 1px solid;
+    background: var(--color-bg);
+    border-radius: 21px;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.registration-button:hover{
+    font-size: 20px;
+}
+.reg-button-wrapper
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
 @media screen and (max-width: 435px) {
     .container{
        width: 270px;

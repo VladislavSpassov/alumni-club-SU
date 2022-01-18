@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моят профил</title>
+    <script defer src="registration.js"></script>
+    <link rel="stylesheet" href="./registration.css" />
+</head>
+
+<body>
+
+
+    <section id="my-information" class="my-information">
+        <header>
+            <h2>Регистрация</h2>
+        </header>
+        <form id="edit">
+            <!-- Here we will add the validation errors that we found -->
+            <label id="errors"></label>
+
+            <label class="text-field" for="username">Потребителско име</label>
+            <input class="text-field" id="username" name="username" type="text"/>
+
+            <label class="text-field" for="password">Парола</label>
+            <input class="text-field" id="password" name="password" type="password" />
+
+            <label class="text-field" for="firstName">Име</label>
+            <input class="text-field" id="firstName" name="firstName" type="text" />
+
+            <label class="text-field" for="lastName">Фамилия</label>
+            <input class="text-field" id="lastName" name="lastName" type="text" />
+
+            <label class="text-field" for="email">Email</label>
+            <input class="text-field" id="email" name="email" type="email" />
+            
+            <label class="text-field" for="faculty">Факултет(*)</label>
+            <input class="text-field" id="faculty" name="faculty" type="text" />
+
+            <label class="text-field" for="speciality">Специалност(*)</label>
+            <input class="text-field" id="speciality" name="speciality" type="text" />
+            
+            <label class="text-field" for="groupUni">Група(*)</label>
+            <input class="text-field" id="groupUni" name="groupUni" type="number" />
+
+            <label class="text-field" for="graduationYear">Година на завършване(*)</label>
+            <input class="text-field" id="graduationYear" name="graduationYear" type="text" />
+            
+            <label class="text-field" for="facNumber">Факултетен номер(*)</label>
+            <input class="text-field" id="facNumber name="facNumber" type="text" />
+
+            <small></small>
+            <i>Проверете за правилното попълване на полетата означени с (*)</i>
+            <button type="submit" id="submit-button">Регистрация</button>
+        </form>
+    </section>
+</body>
+
+</html>

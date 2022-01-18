@@ -13,11 +13,15 @@
 
 <body>
     <header class="header">
-        <h1>Моят профил</h1>
-        <nav>
+        <nav class="buttons-left">
             <button id="home">Начало</button>
             <button id="statistics">Статистика</button>
             <button id="users">Потребители</button>
+
+            
+        </nav>
+        <h1 class="prof-header">Моят профил</h1>
+        <nav class="buttons-right">  
             <button id="logout">Изход</button>
         </nav>
     </header>
@@ -31,7 +35,7 @@
             <label id="errors"></label>
 
             <label class="text-field" for="username">Потребителско име</label>
-            <input class="text-field" id="username" name="username" type="text" readonly/>
+            <input class="text-field" id="username" name="username" type="text"/>
 
             <label class="text-field" for="password">Парола</label>
             <input class="text-field" id="password" name="password" type="password" />
@@ -44,18 +48,21 @@
 
             <label class="text-field" for="email">Email</label>
             <input class="text-field" id="email" name="email" type="email" />
+            
+            <label class="text-field" for="faculty">Факултет</label>
+            <input class="text-field" id="faculty" name="faculty" type="text" readonly/>
 
             <label class="text-field" for="speciality">Специалност</label>
             <input class="text-field" id="speciality" name="speciality" type="text" readonly/>
-
-            <label class="text-field" for="graduationYear">Година на завършване</label>
-            <input class="text-field" id="graduationYear" name="graduationYear" type="text" readonly/>
-
+            
             <label class="text-field" for="groupUni">Група</label>
             <input class="text-field" id="groupUni" name="groupUni" type="number" readonly/>
 
-            <label class="text-field" for="faculty">Факултет</label>
-            <input class="text-field" id="faculty" name="faculty" type="text" readonly/>
+            <label class="text-field" for="graduationYear">Година на завършване</label>
+            <input class="text-field" id="graduationYear" name="graduationYear" type="text" readonly/>
+            
+            <label class="text-field" for="facNumber">Факултетен номер</label>
+            <input class="text-field" id="facNumber name="facNumber" type="text" readonly/>
 
             <small></small>
             <button type="submit" id="submit-button">Обнови</button>

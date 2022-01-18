@@ -13,11 +13,14 @@
 
 <body>
     <header class="header">
-        <h1>Алумни клуб</h1>
-        <nav>
+        <nav class="buttons-left">
             <button id="statistics">Статистика</button>
             <button id="users">Потребители</button>
             <button id="profile">Профил</button>
+            
+        </nav>
+        <h1 class="alumni-header">Алумни клуб</h1>
+        <nav class="buttons-right">  
             <button id="logout">Изход</button>
         </nav>
     </header>
@@ -32,14 +35,19 @@
 
                     <label for="occasion">Събитие</label>
                     <input id="occasion" name="occasion" type="text" />
+                    
+                    <label for="location">Място</label>
+                    <input id="location" name="location" type="text" />
 
-                    <label for="privacy">Поверителност</label>
+                    <label for="privacy">Изпрати до:</label>
                     <select id="privacy" name="privacy" onchange="showDiv('hidden_div', this)">
                         <option value="all">Всички</option>
                         <option value="group">Група</option>
                         <option value="speciality">Специалност</option>
                         <option value="faculty">Факултет</option>
                         <option value="1">Потребителско име</option>
+                        <option value="1">Факултетен номер</option>
+                        
                     </select>
                            <div id="hidden_div">
                                <input id="content" name="content" type="text" />
@@ -47,9 +55,6 @@
 
                     <label for="occasionDate">Дата</label>
                     <input id="occasionDate" name="occasionDate" type="datetime-local" />
-
-                    <label for="location">Място</label>
-                    <input id="location" name="location" type="text" />
 
                     <label for="content">Съдържание</label>
                     <input id="content" name="content" type="text" />
@@ -63,7 +68,7 @@
                 <button id="button-find-alumnis" onclick="getLocation()">Открий алумни наблизо</button>
 
                 <p id="demo"></p>
-                <p id="map" style="width:500px;height:300px;"></p>
+                <p id="map" style="width:350px;height:300px;"></p>
 
                 <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=places&v=weekly"
                     async></script>

@@ -164,20 +164,3 @@ input{
 .success > small {
     color: green;
 }
-
-.prof-header
-{
-    margin-left: -11%;
-}
-.buttons-left
-{
-    margin-left: 5%;
-}
-.buttons-right
-{
-    margin-right: 5%;
-}
-
-input:read-only {
-  background-color: lightgrey;
-}

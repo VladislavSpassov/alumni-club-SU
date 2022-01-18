@@ -24,6 +24,8 @@ h1{
     display: flex;
     place-content: space-between;
     color: var(--color-bg);
+    height: 55px;
+
 }
 
 nav{
@@ -56,15 +58,24 @@ nav{
     margin-top: 30px;
 }
 
-.list-of-users article p{
+.list-of-users article p {
     display: inline-block;
     margin-right: 10px;
     color: var(--color-bg);
+    width: 16%;
+    font-family: 'verdana';
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1%;
+    border: 1px solid var(--color-bg);
 }
 
 .main-article{
     border-bottom: 1px solid var(--color-bg);
-    width: 35%;
+}
+
+article {
+    width: 98%;
 }
 
 
@@ -107,3 +118,18 @@ nav{
         font-size: 12px;
     }
 }
+
+.prof-header
+{
+    margin-left: -11%;
+}
+.buttons-left
+{
+    margin-left: 5%;
+}
+.buttons-right
+{
+    margin-right: 5%;
+}
+
+
