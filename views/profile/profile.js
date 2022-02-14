@@ -180,7 +180,7 @@ const showSuccess = (input, message) => {
 const isBetween = (length, min, max) => length < min || length > max ? false : true;
 
 function getUserRole() {
-  fetch('../endpoints/get_user_role.php', {
+  fetch('../../endpoints/get_user_role.php', {
     method: 'GET'
   })
     .then((response) => {
@@ -194,8 +194,7 @@ function getUserRole() {
         var statistics = document.getElementById('statistics');
         statistics.parentNode.removeChild(statistics);
         var users = document.getElementById('users');
-        users.parentNode.removeChild(users);
-      }
+        users.parentNode.removeChild(users);      }
     })
     .catch(error => {
       const message = 'Error getting user role.';

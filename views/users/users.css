@@ -32,7 +32,7 @@ nav{
     margin-right: 15px;
  }
  
- #home, #logout, #profile{
+ #home, #logout, #profile, #statistics{
      border: 2px solid var(--color-bg);
      color: var(--color-bg);
      background: white;
@@ -47,7 +47,7 @@ nav{
      box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
  }
  
- #home:hover, #logout:hover, #profile:hover{
+ #home:hover, #logout:hover, #profile:hover, #statistics:hover {
      color: white;
      background: var(--color-bg);
  }
@@ -80,7 +80,7 @@ article {
 
 
 @media screen and (max-width: 900px) {
-    #home, #logout, #profile{
+    #home, #logout, #profile, #statistics{
         border: none;
         width: 105px;
         margin-left: -5px;
@@ -98,7 +98,7 @@ article {
 }
 
 @media screen and (max-width: 335px) {
-    #home, #logout, #profile{
+    #home, #logout, #profile, #statistics{
         font-size: 14px;
     }
 

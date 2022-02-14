@@ -13,8 +13,8 @@
     $occasionDate = $phpInput['occasionDate'];
     $location = $phpInput['location'];
     $content = $phpInput['content'];
-
     $post = new Post(null, $occasion, $privacy, $occasionDate, $location, $content);
+
     try {
         $postService->create_post($post);
     } catch (Exception $e) {

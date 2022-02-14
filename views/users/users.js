@@ -1,7 +1,7 @@
 const logoutBtn = document.getElementById('logout');
 
 logoutBtn.addEventListener('click', () => {
-    logout();
+    redirect('../home/home.html');
 })
 
 const homeBtn = document.getElementById('home');
@@ -25,7 +25,7 @@ profileBtn.addEventListener('click', () => {
 
 
 function logout() {
-    fetch('../endpoints/logout.php', {
+    fetch('../../endpoints/logout.php', {
         method: 'GET'
     })
         .then((response) => {

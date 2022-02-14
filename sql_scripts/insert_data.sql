@@ -34,7 +34,7 @@ INSERT INTO `users`
 (`id`, `username`, `password`, `firstName`, `lastName`, `email`, `role`, 
 `speciality`, `graduationYear`, `groupUni`, `faculty`, `longitude`, `latitude`)
 VALUES (NULL, 'admin', 'admin', 'Vladimir', 'Georgiev', 'vladimir_georgiev@gmail.com', 
-'admin', 'software engineering', '2022', '4', 'FMI', NULL, NULL);
+'admin', 'software engineering', '2022', '4', 'FMI', "22.1241241", "23.1414314");
 
 INSERT INTO `posts` 
 (`id`, `privacy`, `userId`, `occasion`, `location`, `content`, `occasionDate`)

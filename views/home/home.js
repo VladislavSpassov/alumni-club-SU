@@ -38,9 +38,6 @@ usersBtn.addEventListener('click', () => {
     redirect("../users/users.html");
 })
 
-function showDiv(divId, element) {
-    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
-}
 
 function logout() {
     fetch('../../endpoints/logout.php', {
@@ -81,11 +78,6 @@ submitPostBtn.addEventListener('click', (event) => {
     const content = document.getElementById('content').value;
     const section = document.getElementById('create-invitation-form');
 
-    // if (!isBetween(occasion, 1, 50) || !occasionDate ||
-    //     !isBetween(location, 1, 50) || !isBetween(content, 1, 50)) {
-    //     showError(section, "Необходимо е да попълните всички полета.");
-    //     return;
-    // }
     showSuccess(section, "Поканата е създадена успешно.");
     const formData = {
         occasion: occasion,
@@ -94,7 +86,6 @@ submitPostBtn.addEventListener('click', (event) => {
         location: location,
         content: content
     };
-
     create_post(formData);
     window.location.reload();
 });
@@ -144,6 +135,7 @@ async function get_my_posts() {
 }
 
 async function create_post(formData) {
+    console.log(JSON.stringify(formData));
     fetch('../../endpoints/create_post.php', {
         method: 'POST',
         headers: {
@@ -205,11 +197,9 @@ async function delete_post(postId) {
             if (!response.ok) {
                 throw new Error("Error deleting post.");
             }
-            return response.json();
         })
         .then((data) => {
             if (data.success === true) {
-                console.log("The post is deleted successfully.");
                 window.location.reload();
             } else {
                 console.log("The post is NOT deleted successfully.");
@@ -217,7 +207,6 @@ async function delete_post(postId) {
         })
         .catch((error) => {
             const message = "Error when deleting a post.";
-            console.log(error);
             console.error(message);
         });
 
@@ -271,7 +260,6 @@ async function get_if_user_accepted(formData) {
         })
         .then((data) => {
             if (data.success === true) {
-                console.log("Successfully got if user accepted.");
                 answer = data.value;
                 return answer;
             } else {
@@ -280,7 +268,6 @@ async function get_if_user_accepted(formData) {
         })
         .catch((error) => {
             const message = "Error getting if user accepted.";
-            console.log(error);
             console.error(message);
         });
 }
@@ -523,8 +510,7 @@ function getUserRole() {
                 var statistics = document.getElementById('statistics');
                 statistics.parentNode.removeChild(statistics);
                 var users = document.getElementById('users');
-                users.parentNode.removeChild(users);
-            }
+                users.parentNode.removeChild(users);            }
         })
         .catch(error => {
             const message = 'Error getting user role.';

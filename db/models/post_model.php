@@ -31,6 +31,7 @@ class PostModel {
             $this->database->get_connection()->beginTransaction();   
             try {
                 $sql = "INSERT INTO posts(userId, occasion, privacy, occasionDate, location, content) VALUES('{$_SESSION['userId']}', :occasion, :privacy, :occasionDate, :location, :content)";
+
                 $this->insertPost = $this->database->get_connection()->prepare($sql);
                 $this->insertPost->execute($data);
                 $this->database->get_connection()->commit();   
